@@ -1,0 +1,55 @@
+{
+  "name": "prompt-ops-console",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Prompt Management + n8n Workflow Operations platform (React + TypeScript frontend)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,md}\"",
+    "mock:init": "msw init public/ --save"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "@tanstack/react-query": "^5.59.0",
+    "@tanstack/react-virtual": "^3.10.8",
+    "@textea/json-viewer": "^4.0.0",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
+    "lucide-react": "^0.451.0",
+    "react": "^18.3.1",
+    "react-diff-viewer-continued": "^3.4.0",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.53.0",
+    "react-router-dom": "^6.26.2",
+    "sonner": "^1.5.0",
+    "zod": "^3.23.8",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.10",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "msw": "^2.4.9",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.8"
+  },
+  "msw": {
+    "workerDirectory": ["public"]
+  }
+}
